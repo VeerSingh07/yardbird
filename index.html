@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yardbird – Find. Connect. Build.</title>
+<meta name="description" content="Yardbird is the nationwide construction directory connecting general contractors, subcontractors, suppliers and vendors. Search by trade and location for free.">
+<meta name="theme-color" content="#15171C">
+<meta property="og:title" content="Yardbird – Find. Connect. Build.">
+<meta property="og:description" content="Find the right subcontractor anywhere. Search the nationwide construction directory for free.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2315171C'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle'%3E%F0%9F%90%93%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#15171C;--navy2:#23272F;--gold:#C6F135;--gold-d:#5F7A00;--blue:#15171C;--bg:#F4F4F1;--card:#fff;--ink:#14161A;--mut:#5C6370;--line:#E4E4DE;--tint:#EEF2DC;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E0F12;--card:#17191F;--ink:#EEF0F3;--mut:#9AA1AD;--line:#272B33;--tint:#1D2218;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E0F12;--card:#17191F;--ink:#EEF0F3;--mut:#9AA1AD;--line:#272B33;--tint:#1D2218;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.ic{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:12px 20px;font-weight:700;font-size:15px;border:1.5px solid transparent;cursor:pointer;font-family:inherit}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.b-gold{background:var(--gold);color:#1B1403}.b-gold:hover{background:#B5DC22}
+.b-blue{background:var(--blue);color:#fff}.b-line{border-color:var(--line);background:var(--card);color:var(--ink)}
+.arrow{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);color:var(--navy);flex:none}
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:24px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:24px;letter-spacing:-.5px;color:var(--navy)}
+.logo small{display:block;font-size:9px;letter-spacing:2.4px;color:var(--gold-d);font-weight:700;margin-top:-4px}
+.mark{width:42px;height:42px;border-radius:12px;background:var(--navy);display:grid;place-items:center;color:var(--gold)}
+.mark .ic{width:24px;height:24px}
+@media (prefers-color-scheme:dark){.logo{color:#fff}}
+.links{display:flex;gap:26px;margin-left:auto;font-size:14px;font-weight:600;color:var(--mut)}
+.links a:hover{color:var(--ink)}
+.navbtn{display:flex;gap:10px}
+.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;color:var(--ink);place-items:center}
+/* hero */
+.hero{position:relative;background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,#2E343F 100%);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;bottom:0;width:62%;height:100%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cg fill='none' stroke='%23C6F135' stroke-opacity='.3' stroke-width='3'%3E%3Cpath d='M40 400V190L160 120l120 70v210M160 120v280M40 190h240M40 295h240M320 400V150l140-80 140 80v250M460 70v330M320 150h280M320 275h280'/%3E%3C/g%3E%3Ccircle cx='520' cy='60' r='46' fill='%23C6F135' fill-opacity='.14'/%3E%3C/svg%3E") right bottom/contain no-repeat;pointer-events:none}
+.hero .wrap{position:relative;z-index:1;padding-top:72px;padding-bottom:64px}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:6px 14px;font-size:13px;font-weight:600;color:#DCE6FA;background:rgba(255,255,255,.06)}
+h1{font-family:'Unbounded','Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(28px,4.6vw,48px);line-height:1.15;letter-spacing:-1px;font-weight:700;margin:20px 0 16px;max-width:760px}
+h1 em{font-style:normal;color:var(--gold)}
+.lead{font-size:18px;color:#C9D6EE;max-width:540px;margin:0 0 28px}
+.search{display:grid;grid-template-columns:1.2fr 1fr auto;gap:8px;background:var(--card);border-radius:18px;padding:8px;max-width:760px;box-shadow:0 20px 50px rgba(3,10,28,.35)}
+.field{display:flex;align-items:center;gap:10px;padding:0 14px;color:var(--mut);min-height:52px;border-radius:12px}
+.field input,.field select{border:0;background:transparent;font:inherit;font-size:15px;color:var(--ink);width:100%;outline-offset:6px}
+.search .btn{min-height:52px;justify-content:center}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;align-items:center;font-size:13px;color:#C9D6EE}
+.chip{border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:6px 14px;font-weight:600;color:#fff;font-size:13px}
+.chip:hover{background:rgba(255,255,255,.12)}
+/* feature strip */
+.strip{background:var(--card);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.feat{display:flex;gap:14px;padding:26px 20px;align-items:flex-start}
+.feat+.feat{border-left:1px solid var(--line)}
+.icb{width:46px;height:46px;border-radius:14px;background:var(--tint);color:var(--blue);display:grid;place-items:center;flex:none}
+.icb .ic{width:24px;height:24px}
+.feat b{display:block;font-size:15px}.feat span{font-size:13.5px;color:var(--mut)}
+/* sections */
+section{padding:72px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:32px;flex-wrap:wrap}
+h2{font-family:'Unbounded','Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.5px;line-height:1.2;margin:0;font-weight:700}
+.sub{color:var(--mut);margin:10px 0 0;max-width:520px}
+.more{font-weight:700;color:var(--blue);display:inline-flex;gap:6px;align-items:center;font-size:15px}
+/* sponsor */
+.spons{display:grid;grid-template-columns:200px 1fr auto;gap:24px;align-items:center;background:var(--navy);color:#fff;border-radius:20px;padding:22px 28px;position:relative}
+.spons .tag{position:absolute;top:10px;right:16px;font-size:11px;color:#9FB2D6;font-weight:600}
+.spons .ph{height:56px;border-radius:12px;border:1.5px dashed rgba(255,255,255,.35);display:grid;place-items:center;font-size:12px;color:#B7C5E3;font-weight:600}
+.spons b{font-family:'Unbounded','Plus Jakarta Sans',system-ui,sans-serif;font-size:17px;line-height:1.3;font-weight:700;display:block;margin-bottom:6px}.spons span{color:#B7C5E3;font-size:14px}
+/* trades */
+.trades{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.trade{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px;transition:border-color .2s,transform .2s}
+.trade:hover{border-color:var(--blue);transform:translateY(-3px)}
+.trade b{font-size:17px}.trade span{font-size:13px;color:var(--mut)}
+.trade .row{display:flex;justify-content:space-between;align-items:center}
+.trade .arrow{background:var(--tint);color:var(--blue)}
+/* audience */
+.aud{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{border-radius:24px;padding:40px;position:relative;overflow:hidden;min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;gap:14px}
+.card h3{font-family:'Unbounded','Plus Jakarta Sans',system-ui,sans-serif;font-size:clamp(20px,2.4vw,26px);line-height:1.2;letter-spacing:-.4px;margin:0;font-weight:700}
+.card p{margin:0;max-width:400px}
+.card.gc{background:linear-gradient(150deg,#F3F8DC,#DCEB9A);color:#1A2200}
+.card.sub{background:linear-gradient(150deg,var(--navy),#2E343F);color:#fff}
+.card .big{position:absolute;right:-20px;top:-10px;width:200px;height:200px;opacity:.12;stroke-width:1.2}
+.card ul{list-style:none;padding:0;margin:4px 0 8px;display:grid;gap:8px;font-weight:600;font-size:15px}
+.card li{display:flex;gap:10px;align-items:center}
+/* featured */
+.cos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.co{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.co .cv{height:210px;background:linear-gradient(120deg,var(--navy2),#3A414D);position:relative}
+.co.pm .cv{background:linear-gradient(120deg,#15171C,#8FB31A)}
+.co .lg{position:absolute;left:20px;bottom:-26px;width:58px;height:58px;border-radius:14px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold-d)}
+.co .bd{padding:38px 20px 20px}
+.co h4{margin:0;font-size:17px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ham{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#2F6BFF;color:#fff}
+.ham .ic{width:13px;height:13px;stroke-width:2.2}
+.meta{font-size:13.5px;color:var(--mut);margin:6px 0 12px;display:flex;gap:6px;align-items:center}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag2{font-size:12px;font-weight:600;background:var(--tint);color:var(--blue);padding:4px 10px;border-radius:99px}
+.fav{position:absolute;top:12px;right:12px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--navy);display:grid;place-items:center;cursor:pointer;transition:transform .15s}
+.fav:hover{transform:scale(1.08)}.fav:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.fav .ic{width:20px;height:20px}.fav[aria-pressed="true"]{color:#E5484D}.fav[aria-pressed="true"] .ic{fill:currentColor}
+.svc{margin:0 0 12px;font-size:13.5px;font-weight:600;display:flex;gap:8px;align-items:flex-start;color:var(--ink)}
+.svc .ic{color:var(--gold-d);margin-top:2px}
+.note{font-size:12.5px;color:var(--mut);margin-top:18px}
+/* how */
+.how{background:var(--card);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
+.step{text-align:center;padding:10px 24px}
+.step .icb{margin:0 auto 18px;width:68px;height:68px;border-radius:50%;background:var(--navy);color:var(--gold)}
+.step .icb .ic{width:30px;height:30px}
+.step h3{margin:0 0 6px;font-size:22px;font-weight:800}.step p{margin:0;color:var(--mut)}
+.step .n{display:inline-block;font-size:13px;font-weight:700;color:var(--gold-d);margin-bottom:8px}
+/* locations */
+.locs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.loc{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px;font-weight:700;font-size:15px;transition:border-color .2s,transform .2s}
+.loc .ic{width:40px;height:40px;padding:10px;border-radius:12px;background:var(--tint);color:var(--blue)}
+.loc:hover{transform:translateY(-2px)}
+.loc:hover{border-color:var(--blue);color:var(--blue)}
+/* cta */
+.cta{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:28px;padding:56px 40px;text-align:center}
+.cta h2{max-width:640px;margin:0 auto 12px}.cta p{color:#C9D6EE;margin:0 auto 26px;max-width:500px}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.b-wh{background:#fff;color:var(--navy)}
+footer{background:var(--navy);color:#B7C5E3;padding:56px 0 28px;font-size:14px}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
+footer .logo{color:#fff}footer h5{color:#fff;margin:0 0 14px;font-size:14px}
+footer a{display:block;margin-bottom:8px}footer a:hover{color:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px}
+.hg{display:block}
+.tabs{display:inline-flex;gap:4px;background:rgba(255,255,255,.1);border-radius:14px;padding:4px;margin-bottom:14px}
+.tab{border:0;background:transparent;color:#DADDE3;font:inherit;font-weight:700;font-size:14px;padding:0 16px;border-radius:10px;cursor:pointer;min-height:44px}
+.tab[aria-selected="true"]{background:#fff;color:var(--navy)}.tab:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.pv{background:var(--card);color:var(--ink);border-radius:22px;padding:22px;box-shadow:0 30px 60px rgba(0,0,0,.4);position:relative}
+.pv .top{font-size:12px;font-weight:700;color:var(--mut);margin-bottom:14px}
+.pv .who{display:flex;gap:14px;align-items:center}
+.pv .lgo{width:56px;height:56px;border-radius:14px;background:var(--tint);color:var(--gold-d);display:grid;place-items:center;flex:none}
+.pv h4{margin:0;font-size:17px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.pv .acts{display:flex;gap:8px;margin-top:16px}.pv .acts .btn{flex:1;justify-content:center;padding:11px 12px;font-size:14px}
+.pv .float{position:absolute;left:-28px;bottom:-22px;background:var(--navy);color:#fff;border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:10px 14px;font-size:13px;font-weight:700;display:flex;gap:8px;align-items:center;box-shadow:0 14px 30px rgba(0,0,0,.3)}
+.pv .float .ic{color:var(--gold)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:18px;position:relative}
+.plan h3{margin:0;font-size:20px;font-weight:800}
+.plan .pr{font-size:44px;font-weight:800;letter-spacing:-1.5px;line-height:1}.plan .pr small{font-size:15px;font-weight:600;color:var(--mut);letter-spacing:0}
+.plan p{margin:0;color:var(--mut);font-size:14.5px}
+.plan ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14.5px;font-weight:500;flex:1}
+.plan li{display:flex;gap:10px;align-items:flex-start}.plan li .ic{color:var(--gold-d);margin-top:2px}
+.plan.pm{background:var(--navy);color:#fff;border-color:rgba(255,255,255,.15)}.plan.pm p,.plan.pm .pr small{color:#B9BEC8}.plan.pm li .ic{color:var(--gold)}
+.plan .badge{position:absolute;top:-13px;left:32px;background:var(--gold);color:#1B1403;font-size:12px;font-weight:800;padding:5px 12px;border-radius:99px}
+.plan .btn{justify-content:center}
+.faq{display:grid;grid-template-columns:1fr 1.5fr;gap:48px;align-items:start}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0 22px}details+details{margin-top:12px}
+summary{cursor:pointer;list-style:none;font-weight:700;padding:20px 0;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:22px;font-weight:500;color:var(--mut)}
+details[open] summary::after{content:"\2212"}details p{margin:0 0 20px;color:var(--mut)}
+summary:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:8px}
+.mnav{display:none;border-top:1px solid var(--line);padding:10px 20px 18px;background:var(--card)}.mnav.open{display:grid}.mnav a{padding:13px 4px;font-weight:600;border-bottom:1px solid var(--line)}.mnav .btn{margin-top:12px;justify-content:center;border-bottom:0}
+@media(min-width:981px){.mnav{display:none!important}}
+/* responsive */
+@media(max-width:980px){
+.links,.navbtn{display:none}.burger{display:grid}
+.strip .wrap{grid-template-columns:1fr 1fr}.feat:nth-child(3){border-left:0}.feat:nth-child(n+3){border-top:1px solid var(--line)}
+.trades{grid-template-columns:repeat(2,1fr)}.cos{grid-template-columns:1fr 1fr}
+.fg{grid-template-columns:1fr 1fr}.spons{grid-template-columns:1fr}.hero::after{opacity:.5;width:100%}.hg{grid-template-columns:1fr}.pv{display:none}.plans{grid-template-columns:1fr;gap:28px}.faq{grid-template-columns:1fr;gap:24px}}
+@media(max-width:680px){
+section{padding:48px 0}.hero .wrap{padding-top:44px;padding-bottom:44px}
+.search{grid-template-columns:1fr}.field+.field{border-top:1px solid var(--line)}
+.aud,.steps,.cos{grid-template-columns:1fr}.card{padding:28px;min-height:280px}
+.strip .wrap{grid-template-columns:1fr}.feat+.feat{border-left:0;border-top:1px solid var(--line)}.feat{padding:18px 4px}
+.cta{padding:40px 22px}.lead{font-size:16px}.locs{grid-template-columns:1fr 1fr;gap:12px}.loc{flex-direction:column;align-items:flex-start;gap:10px;padding:16px}}
+@media(max-width:420px){.trades{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+<symbol id="arr" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+<symbol id="hat" viewBox="0 0 24 24"><path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 7v4M9.500 9a4 4 0 0 1 5 0"/></symbol>
+<symbol id="hand" viewBox="0 0 24 24"><path d="m11 17 2 2a1.400 1.400 0 0 0 2-2M14 14l2.500 2.500a1.400 1.400 0 0 0 2-2l-3.800-3.800a2 2 0 0 0-2.800 0L9 13M3 11l4-4 4 1M21 11l-4-4-3 1M3 11l6 6M21 11l-2 2"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.500"/><path d="M2.500 20a6.500 6.500 0 0 1 13 0M16 4.500a3.500 3.500 0 0 1 0 7M18 14.500a6 6 0 0 1 3.500 5.500"/></symbol>
+<symbol id="bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+<symbol id="roof" viewBox="0 0 24 24"><path d="M3 12 12 4l9 8M6 10v10h12V10M10 20v-5h4v5"/></symbol>
+<symbol id="drop" viewBox="0 0 24 24"><path d="M12 3s6 6.500 6 11a6 6 0 0 1-12 0c0-4.500 6-11 6-11z"/></symbol>
+<symbol id="fan" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="4"/><path d="M12 8v8M8 12h8"/></symbol>
+<symbol id="frame" viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12M4 13h16M12 4v17M4 17h16"/></symbol>
+<symbol id="brick" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9.300h18M3 14.700h18M9 4v5.300M15 9.300v5.400M9 14.700V20"/></symbol>
+<symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5zM3 13l9 5 9-5"/></symbol>
+<symbol id="paint" viewBox="0 0 24 24"><rect x="4" y="3" width="14" height="6" rx="1.500"/><path d="M18 6h2v5h-8v3M12 14v7"/></symbol>
+<symbol id="truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8M6.500 19a1.500 1.500 0 1 0 0-3 1.500 1.500 0 0 0 0 3zM17.500 19a1.500 1.500 0 1 0 0-3 1.500 1.500 0 0 0 0 3z"/></symbol>
+<symbol id="ham" viewBox="0 0 24 24"><path d="m14 4 6 6-3 1-2-2-8 11-3-3 11-8-2-2zM3 21l3-3"/></symbol>
+<symbol id="heart" viewBox="0 0 24 24"><path d="M12 20s-7.500-4.600-9-9.500A5 5 0 0 1 12 6.500a5 5 0 0 1 9 4C19.500 15.400 12 20 12 20z"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="m5 12.500 4.500 4.500L19 7.500"/></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v9h14v-9M12 8c-3 0-4.500-4-1.500-4S12 8 12 8zm0 0c3 0 4.500-4 1.500-4S12 8 12 8z"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+</defs>
+</svg>
+
+<header>
+<div class="wrap nav">
+<a class="logo" href="#" aria-label="Yardbird home"><span class="mark"><svg class="ic"><use href="#hat"/></svg></span><span>YARDBIRD<small>FIND. CONNECT. BUILD.</small></span></a>
+<nav class="links" aria-label="Main"><a href="#">Find Contractors</a><a href="#">For GCs</a><a href="#">For Subcontractors</a><a href="#plans">Pricing</a><a href="#">Resources</a><a href="#">About</a></nav>
+<div class="navbtn"><a class="btn b-line" href="#">Sign in</a><a class="btn b-gold" href="#">List your company</a></div>
+<button class="burger" aria-label="Open menu" aria-expanded="false"><svg class="ic"><use href="#menu"/></svg></button>
+</div>
+<div class="mnav" id="mnav"><a href="#">Find contractors</a><a href="#">For GCs</a><a href="#">For subcontractors</a><a href="#plans">Pricing</a><a href="#">About</a><a class="btn b-line" href="#">Sign in</a><a class="btn b-gold" href="#">List your company</a></div>
+</header>
+
+<main>
+<div class="hero">
+<div class="wrap"><div class="hg"><div>
+<h1>Find the right <em>subcontractor</em> anywhere.</h1>
+<p class="lead">The nationwide directory connecting general contractors, subcontractors, suppliers and vendors.</p>
+<form class="search" onsubmit="return false" role="search">
+<label class="field"><svg class="ic"><use href="#search"/></svg><input type="text" placeholder="Trade or company name" aria-label="Trade or company name"></label>
+<label class="field"><svg class="ic"><use href="#pin"/></svg><input type="text" placeholder="City, state or ZIP" aria-label="City, state or ZIP"></label>
+<button class="btn b-gold" type="submit">Search</button>
+</form>
+<div class="chips"><span>Popular:</span><a class="chip" href="#">Electricians</a><a class="chip" href="#">Roofing</a><a class="chip" href="#">HVAC</a><a class="chip" href="#">Plumbing</a><a class="chip" href="#">Concrete</a><a class="chip" href="#">Framing</a><a class="chip" href="#">All trades</a></div>
+</div>
+</div></div>
+</div>
+
+<div class="strip"><div class="wrap">
+<div class="feat"><span class="icb"><svg class="ic"><use href="#gift"/></svg></span><div><b>Free to search</b><span>No sign-up, no fees for GCs.</span></div></div>
+<div class="feat"><span class="icb"><svg class="ic"><use href="#search"/></svg></span><div><b>Easy search</b><span>Filter by trade, city, ZIP and more.</span></div></div>
+<div class="feat"><span class="icb"><svg class="ic"><use href="#phone"/></svg></span><div><b>Direct contact</b><span>Call or message companies directly.</span></div></div>
+<div class="feat"><span class="icb"><svg class="ic"><use href="#hat"/></svg></span><div><b>Built for the industry</b><span>Made for people who build.</span></div></div>
+</div></div>
+
+<section><div class="wrap">
+<div class="spons"><span class="tag">Sponsored</span><div class="ph">Sponsor logo</div><div><b>Banner headline for a national sponsor</b><span>One-line message for sponsor placement. Sold by region or trade.</span></div><a class="btn b-gold" href="#">Learn more</a></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="head"><div><h2>Browse by trade</h2><p class="sub">Start with the work you need done. Every trade has its own local pages.</p></div><a class="more" href="#">View all trades <svg class="ic"><use href="#arr"/></svg></a></div>
+<div class="trades">
+<a class="trade" href="#"><div class="row"><span class="icb"><svg class="ic"><use href="#frame"/></svg></span><span class="arrow"><svg class="ic" style="width:16px"><use href="#arr"/></svg></span></div><div><b>Framing</b><br><span>Carpentry and structure</span></div></a>
+<a class="trade" href="#"><div class="row"><span class="icb"><svg class="ic"><use href="#roof"/></svg></span><span class="arrow"><svg class="ic" style="width:16px"><use href="#arr"/></svg></span></div><div><b>Roofing</b><br><span>Install and repair</span></div></a>
+<a class="trade" href="#"><div class="row"><span class="icb"><svg class="ic"><use href="#fan"/></svg></span><span class="arrow"><svg class="ic" style="width:16px"><use href="#arr"/></svg></span></div><div><b>HVAC</b><br><span>Heating and cooling</span></div></a>
+<a class="trade" href="#"><div class="row"><span class="icb"><svg class="ic"><use href="#drop"/></svg></span><span class="arrow"><svg class="ic" style="width:16px"><use href="#arr"/></svg></span></div><div><b>Plumbing</b><br><span>Pipes and fixtures</span></div></a>
+<a class="trade" href="#"><div class="row"><span class="icb"><svg class="ic"><use href="#bolt"/></svg></span><span class="arrow"><svg class="ic" style="width:16px"><use href="#arr"/></svg></span></div><div><b>Electrical</b><br><span>Power and lighting</span></div></a>
+<a class="trade" href="#"><div class="row"><span class="icb"><svg class="ic"><use href="#layers"/></svg></span><span class="arrow"><svg class="ic" style="width:16px"><use href="#arr"/></svg></span></div><div><b>Concrete</b><br><span>Slabs and foundations</span></div></a>
+<a class="trade" href="#"><div class="row"><span class="icb"><svg class="ic"><use href="#brick"/></svg></span><span class="arrow"><svg class="ic" style="width:16px"><use href="#arr"/></svg></span></div><div><b>Masonry</b><br><span>Brick, block and stone</span></div></a>
+<a class="trade" href="#"><div class="row"><span class="icb"><svg class="ic"><use href="#paint"/></svg></span><span class="arrow"><svg class="ic" style="width:16px"><use href="#arr"/></svg></span></div><div><b>Interior &amp; finish</b><br><span>Drywall, paint, flooring</span></div></a>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap aud">
+<div class="card gc"><svg class="ic big"><use href="#search"/></svg><h3>General contractors: find the trades you need.</h3><ul><li><svg class="ic"><use href="#check"/></svg>Search and contact for free</li><li><svg class="ic"><use href="#check"/></svg>Save favorites and build lists</li></ul><div><a class="btn b-blue" href="#">Start searching <svg class="ic"><use href="#arr"/></svg></a></div></div>
+<div class="card sub"><svg class="ic big"><use href="#hat"/></svg><h3>Subs and suppliers: get discovered. Grow your business.</h3><ul><li><svg class="ic" style="color:var(--gold)"><use href="#check"/></svg>Free listing, upgrade any time</li><li><svg class="ic" style="color:var(--gold)"><use href="#check"/></svg>Show your work with a project gallery</li></ul><div><a class="btn b-gold" href="#">List your company <svg class="ic"><use href="#arr"/></svg></a></div></div>
+</div></section>
+
+<section style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap">
+<div class="head"><div><h2>Featured companies</h2><p class="sub">Premium members appear first in their trade and area.</p></div><a class="btn b-blue" href="#">See all companies <svg class="ic"><use href="#arr"/></svg></a></div>
+<div class="cos">
+<article class="co pm"><div class="cv"><button class="fav" aria-pressed="false" aria-label="Save Gulf Coast Electrical to favorites"><svg class="ic"><use href="#heart"/></svg></button><span class="lg"><svg class="ic" style="width:30px;height:30px"><use href="#bolt"/></svg></span></div><div class="bd"><h4>Gulf Coast Electrical <span class="ham" title="Premium member"><svg class="ic"><use href="#ham"/></svg></span></h4><p class="meta"><svg class="ic" style="width:15px"><use href="#pin"/></svg>Sarasota, FL, serves Tampa Bay</p><p class="svc"><svg class="ic" style="width:15px"><use href="#ham"/></svg>Panel upgrades, EV chargers, lighting design</p><div class="tags"><span class="tag2">Electrical</span><span class="tag2">Residential</span><span class="tag2">Commercial</span></div></div></article>
+<article class="co"><div class="cv"><button class="fav" aria-pressed="false" aria-label="Save Summit Roofing Co. to favorites"><svg class="ic"><use href="#heart"/></svg></button><span class="lg"><svg class="ic" style="width:30px;height:30px"><use href="#roof"/></svg></span></div><div class="bd"><h4>Summit Roofing Co.</h4><p class="meta"><svg class="ic" style="width:15px"><use href="#pin"/></svg>Nashville, TN, statewide</p><p class="svc"><svg class="ic" style="width:15px"><use href="#ham"/></svg>Metal roofing, re-roofs, roof repair</p><div class="tags"><span class="tag2">Roofing</span><span class="tag2">Commercial</span></div></div></article>
+<article class="co pm"><div class="cv"><button class="fav" aria-pressed="false" aria-label="Save Bedrock Concrete to favorites"><svg class="ic"><use href="#heart"/></svg></button><span class="lg"><svg class="ic" style="width:30px;height:30px"><use href="#layers"/></svg></span></div><div class="bd"><h4>Bedrock Concrete <span class="ham" title="Premium member"><svg class="ic"><use href="#ham"/></svg></span></h4><p class="meta"><svg class="ic" style="width:15px"><use href="#pin"/></svg>Tampa, FL, regional</p><p class="svc"><svg class="ic" style="width:15px"><use href="#ham"/></svg>Slabs, foundations, decorative concrete</p><div class="tags"><span class="tag2">Concrete</span><span class="tag2">New construction</span></div></div></article>
+<article class="co"><div class="cv"><button class="fav" aria-pressed="false" aria-label="Save Northline Framing to favorites"><svg class="ic"><use href="#heart"/></svg></button><span class="lg"><svg class="ic" style="width:30px;height:30px"><use href="#frame"/></svg></span></div><div class="bd"><h4>Northline Framing</h4><p class="meta"><svg class="ic" style="width:15px"><use href="#pin"/></svg>Atlanta, GA, regional</p><p class="svc"><svg class="ic" style="width:15px"><use href="#ham"/></svg>Wood framing, steel studs, roof trusses</p><div class="tags"><span class="tag2">Framing</span><span class="tag2">Residential</span></div></div></article>
+<article class="co"><div class="cv"><button class="fav" aria-pressed="false" aria-label="Save Clearwater Pipe &amp; Plumbing to favorites"><svg class="ic"><use href="#heart"/></svg></button><span class="lg"><svg class="ic" style="width:30px;height:30px"><use href="#drop"/></svg></span></div><div class="bd"><h4>Clearwater Pipe &amp; Plumbing</h4><p class="meta"><svg class="ic" style="width:15px"><use href="#pin"/></svg>Clearwater, FL, local</p><p class="svc"><svg class="ic" style="width:15px"><use href="#ham"/></svg>Rough-in, repiping, water heaters</p><div class="tags"><span class="tag2">Plumbing</span><span class="tag2">Renovation</span></div></div></article>
+<article class="co pm"><div class="cv"><button class="fav" aria-pressed="false" aria-label="Save Desert Air Mechanical to favorites"><svg class="ic"><use href="#heart"/></svg></button><span class="lg"><svg class="ic" style="width:30px;height:30px"><use href="#fan"/></svg></span></div><div class="bd"><h4>Desert Air Mechanical <span class="ham" title="Premium member"><svg class="ic"><use href="#ham"/></svg></span></h4><p class="meta"><svg class="ic" style="width:15px"><use href="#pin"/></svg>Phoenix, AZ, statewide</p><p class="svc"><svg class="ic" style="width:15px"><use href="#ham"/></svg>Commercial HVAC, ductwork, service plans</p><div class="tags"><span class="tag2">HVAC</span><span class="tag2">Commercial</span></div></div></article>
+<article class="co"><div class="cv"><button class="fav" aria-pressed="false" aria-label="Save Ironstone Masonry to favorites"><svg class="ic"><use href="#heart"/></svg></button><span class="lg"><svg class="ic" style="width:30px;height:30px"><use href="#brick"/></svg></span></div><div class="bd"><h4>Ironstone Masonry</h4><p class="meta"><svg class="ic" style="width:15px"><use href="#pin"/></svg>Charlotte, NC, regional</p><p class="svc"><svg class="ic" style="width:15px"><use href="#ham"/></svg>Brick veneer, block walls, natural stone</p><div class="tags"><span class="tag2">Masonry</span><span class="tag2">New construction</span></div></div></article>
+<article class="co"><div class="cv"><button class="fav" aria-pressed="false" aria-label="Save Finish Line Drywall to favorites"><svg class="ic"><use href="#heart"/></svg></button><span class="lg"><svg class="ic" style="width:30px;height:30px"><use href="#paint"/></svg></span></div><div class="bd"><h4>Finish Line Drywall</h4><p class="meta"><svg class="ic" style="width:15px"><use href="#pin"/></svg>Dallas, TX, regional</p><p class="svc"><svg class="ic" style="width:15px"><use href="#ham"/></svg>Drywall, taping, interior painting</p><div class="tags"><span class="tag2">Interior &amp; finish</span><span class="tag2">Residential</span></div></div></article>
+<article class="co"><div class="cv"><button class="fav" aria-pressed="false" aria-label="Save Mile High Excavation to favorites"><svg class="ic"><use href="#heart"/></svg></button><span class="lg"><svg class="ic" style="width:30px;height:30px"><use href="#truck"/></svg></span></div><div class="bd"><h4>Mile High Excavation</h4><p class="meta"><svg class="ic" style="width:15px"><use href="#pin"/></svg>Denver, CO, statewide</p><p class="svc"><svg class="ic" style="width:15px"><use href="#ham"/></svg>Grading, excavation, utility trenching</p><div class="tags"><span class="tag2">Site work</span><span class="tag2">Commercial</span></div></div></article>
+</div>
+<p class="note">Licenses and insurance are self-reported by each company and not verified by Yardbird. Sample companies shown for design only.</p>
+</div></section>
+
+<section><div class="wrap">
+<div class="head"><div><h2>Find companies near any job site</h2><p class="sub">Local pages for every trade and city.</p></div><a class="more" href="#">Browse all locations <svg class="ic"><use href="#arr"/></svg></a></div>
+<div class="locs"><a class="loc" href="#"><svg class="ic"><use href="#pin"/></svg>Tampa, FL</a><a class="loc" href="#"><svg class="ic"><use href="#pin"/></svg>Sarasota, FL</a><a class="loc" href="#"><svg class="ic"><use href="#pin"/></svg>Nashville, TN</a><a class="loc" href="#"><svg class="ic"><use href="#pin"/></svg>Atlanta, GA</a><a class="loc" href="#"><svg class="ic"><use href="#pin"/></svg>Dallas, TX</a><a class="loc" href="#"><svg class="ic"><use href="#pin"/></svg>Phoenix, AZ</a><a class="loc" href="#"><svg class="ic"><use href="#pin"/></svg>Charlotte, NC</a><a class="loc" href="#"><svg class="ic"><use href="#pin"/></svg>Denver, CO</a></div>
+</div></section>
+
+<section class="how"><div class="wrap">
+<div class="head" style="justify-content:center;text-align:center"><div><h2>How Yardbird works</h2></div></div>
+<div class="steps">
+<div class="step"><span class="icb"><svg class="ic"><use href="#search"/></svg></span><span class="n">Step 1</span><h3>Find</h3><p>Search by trade, location and project type.</p></div>
+<div class="step"><span class="icb"><svg class="ic"><use href="#hand"/></svg></span><span class="n">Step 2</span><h3>Connect</h3><p>View company profiles and contact them directly.</p></div>
+<div class="step"><span class="icb"><svg class="ic"><use href="#hat"/></svg></span><span class="n">Step 3</span><h3>Build</h3><p>Create valuable partnerships and get the job done.</p></div>
+</div></div></section>
+
+<section id="plans" style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap"><div class="head" style="justify-content:center;text-align:center"><div><h2>Plans for every company</h2><p class="sub" style="margin-inline:auto">Start free. Upgrade when you want more visibility. Cancel any time and your listing stays live on the Free plan.</p></div></div>
+<div class="plans">
+<div class="plan"><h3>Free</h3><div class="pr">$0<small>/month</small></div><p>A basic listing so general contractors can find you.</p><ul><li><svg class="ic"><use href="#check"/></svg>Company profile with logo and contact details</li><li><svg class="ic"><use href="#check"/></svg>Up to 3 trade specialties</li><li><svg class="ic"><use href="#check"/></svg>Up to 3 project photos</li><li><svg class="ic"><use href="#check"/></svg>Standard directory placement</li></ul><a class="btn b-line" href="#">Start free</a></div>
+<div class="plan"><h3>Pro</h3><div class="pr">$79<small>/month</small></div><p>A more professional presence with higher visibility.</p><ul><li><svg class="ic"><use href="#check"/></svg>Everything in Free</li><li><svg class="ic"><use href="#check"/></svg>Up to 10 trades and 10 project photos</li><li><svg class="ic"><use href="#check"/></svg>Up to 5 featured projects and a cover banner</li><li><svg class="ic"><use href="#check"/></svg>Higher search placement and basic analytics</li></ul><a class="btn b-blue" href="#">Choose Pro</a></div>
+<div class="plan pm"><span class="badge">Maximum exposure</span><h3>Premium <span class="ham" style="vertical-align:middle"><svg class="ic"><use href="#ham"/></svg></span></h3><div class="pr">$169<small>/month</small></div><p>The blue hammer badge and top placement in your trade.</p><ul><li><svg class="ic"><use href="#check"/></svg>Everything in Pro</li><li><svg class="ic"><use href="#check"/></svg>Unlimited project photos and featured projects</li><li><svg class="ic"><use href="#check"/></svg>Premium profile design</li><li><svg class="ic"><use href="#check"/></svg>Priority placement and advanced analytics</li></ul><a class="btn b-gold" href="#">Choose Premium</a></div>
+</div></div></section>
+
+<section><div class="wrap faq"><div><h2>Questions, answered</h2><p class="sub">Can't find what you need? Send us a message and we'll reply.</p><p style="margin-top:20px"><a class="btn b-line" href="#">Contact us</a></p></div><div>
+<details><summary>Is Yardbird free for general contractors?</summary><p>Yes. Searching, viewing profiles and contacting companies is free with no sign-up. A free account lets you save favorites and build lists.</p></details>
+<details><summary>Does Yardbird verify licenses and insurance?</summary><p>No. License, insurance and workers' compensation status are self-reported by each company. A paid plan does not mean Yardbird has verified them.</p></details>
+<details><summary>What happens if a company cancels its plan?</summary><p>The listing is never deleted. It moves back to the Free plan automatically.</p></details>
+<details><summary>Can a company serve more than one city or state?</summary><p>Yes. Choose every state, city or region you work in and your company appears in searches for each one, not only your office address.</p></details>
+</div></div></section>
+
+<section><div class="wrap"><div class="cta"><h2>First on the job. Last to leave.</h2><p>Join Yardbird and put your company in front of the contractors who are hiring.</p><div class="btns"><a class="btn b-gold" href="#">List your company</a><a class="btn b-wh" href="#">Find subcontractors</a></div></div></div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><a class="logo" href="#"><span class="mark"><svg class="ic"><use href="#hat"/></svg></span><span>YARDBIRD<small>FIND. CONNECT. BUILD.</small></span></a><p style="max-width:280px;margin-top:14px">The nationwide construction directory for general contractors, subcontractors, suppliers and vendors.</p></div>
+<div><h5>Find</h5><a href="#">Subcontractors</a><a href="#">Suppliers &amp; vendors</a><a href="#">Browse trades</a><a href="#">Browse locations</a></div>
+<div><h5>Company</h5><a href="#">About us</a><a href="#">How it works</a><a href="#">Pricing</a><a href="#">Contact &amp; FAQs</a></div>
+<div><h5>Account</h5><a href="#">Sign in</a><a href="#">List your company</a><a href="#">For GCs</a><a href="#">For subcontractors</a></div>
+</div>
+<div class="copy"><span>© 2026 Yardbird. All rights reserved.</span><span>Terms · Privacy</span></div>
+</div></footer>
+<script>document.querySelectorAll('.fav').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();b.setAttribute('aria-pressed',String(b.getAttribute('aria-pressed')!=='true'))})});document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected','false')});t.setAttribute('aria-selected','true')})});var bg=document.querySelector('.burger'),mn=document.getElementById('mnav');bg.addEventListener('click',function(){var o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',String(o))})</script>
+</body>
+</html>
